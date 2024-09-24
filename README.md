@@ -15,3 +15,8 @@ The 10_Ks_extractor.ipynb notebook enables users to extract 10-K reports from ED
 ## Converting paragraphs to tokens
 
 The convert_to_tokens.ipynb notebook converts the previously obtained 10-K paragraphs into lists of tokens suitable for interpretation by the BERT model we will be using.
+
+
+## Converting tokens to vectors
+
+The final section of the code, 10_K_to_vector.ipynb, is the most flexible, as it requires repurposing to suit your specific needs and may be computationally intensive. We provide an example here using the BERT model available at [Hugging Face](https://huggingface.co/yiyanghkust/finbert-tone), which is specialized in analyzing corporate reports, including 10-K and 10-Q filings, earnings call transcripts, and analyst reports. Our example took three weeks to compute on a single computer without splitting the process. The splitter enables the simultaneous processing of multiple parts of the dataset, which can significantly reduce computation time.
